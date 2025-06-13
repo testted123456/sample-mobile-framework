@@ -1,4 +1,5 @@
 # Project Structure
+``` 
 ├── src
 │   ├── main
 │   │   └── java
@@ -21,6 +22,9 @@
 ├── testng.xml                     # TestNG suite configuration
 ├── pom.xml                        # Maven configuration
 └── README.md                      # Project documentation
+``` 
+
+
 
 # Tech Stack
 Java
