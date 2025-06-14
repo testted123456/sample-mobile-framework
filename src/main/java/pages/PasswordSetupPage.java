@@ -24,7 +24,7 @@ public class PasswordSetupPage extends BasePage{
     private By btnConfirm = By.id("confirm");
 
     public void inputDigit1(String digit) {
-        driver.findElement(ibDigit1).sendKeys(digit);
+        sendKeys(ibDigit1, digit);
     }
 
     public void inputDigit2(String digit) {

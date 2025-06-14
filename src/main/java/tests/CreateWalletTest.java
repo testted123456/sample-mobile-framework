@@ -19,6 +19,7 @@ public class CreateWalletTest extends BaseTest {
 
     SuccessBiz successBiz = new SuccessBiz();
 
+    // retrieve test data from excel file
     @DataProvider(name="successData")
     public Object[][] provider() throws Exception {
         return ExcelUtils.getTableArray("resources/createWallet.xlsx", "success");
