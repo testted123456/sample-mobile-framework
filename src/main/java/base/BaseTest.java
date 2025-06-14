@@ -16,7 +16,7 @@ public class BaseTest {
     @BeforeSuite
     public void setUp() {
         DriverUtils.initializeDriver();
-        test = ReportUtils.createTest("My Sample Test");
+//        test = ReportUtils.createTest("My Sample Test");
     }
 
     @AfterSuite
