@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 public class PasswordSetupPage extends BasePage{
 
+    // assume the password element's id is d1, d2...
     private By ibDigit1 = By.id("d1");
 
     private By ibDigit2 = By.id("d2");
@@ -27,36 +28,30 @@ public class PasswordSetupPage extends BasePage{
     }
 
     public void inputDigit2(String digit) {
-        driver.findElement(ibDigit2).sendKeys(digit);
+        sendKeys(ibDigit2, digit);
     }
 
     public void inputDigit3(String digit) {
-        driver.findElement(ibDigit3).sendKeys(digit);
+        sendKeys(ibDigit3, digit);
     }
 
     public void inputDigit4(String digit) {
-        driver.findElement(ibDigit4).sendKeys(digit);
+        sendKeys(ibDigit4, digit);
     }
 
     public void inputDigit5(String digit) {
-        driver.findElement(ibDigit5).sendKeys(digit);
+        sendKeys(ibDigit5, digit);
     }
 
     public void inputDigit6(String digit) {
-        driver.findElement(ibDigit6).sendKeys(digit);
+        sendKeys(ibDigit6, digit);
     }
 
     public void clickDeny() {
-        wait.until(d -> {
-            driver.findElement(btnDeny).click();
-            return true;
-        });
+        click(btnDeny);
     }
 
     public void clickConfirm() {
-        wait.until(d -> {
-            driver.findElement(btnConfirm).click();
-            return true;
-        });
+        click(btnConfirm);
     }
 }

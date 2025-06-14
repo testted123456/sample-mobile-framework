@@ -11,14 +11,14 @@ public class SuccessPage extends BasePage{
     private By btnSkip = By.id("buyCrypto");
 
     public void clickBuyCrypto() {
-        driver.findElement(btnBuyCrypto).click();
+        click(btnBuyCrypto);
     }
 
     public void clickBtnDepositCrypto() {
-        driver.findElement(btnDepositCrypto).click();
+        click(btnDepositCrypto);
     }
 
     public void clickBtnSkip() {
-        driver.findElement(btnSkip).click();
+        click(btnSkip);
     }
 }

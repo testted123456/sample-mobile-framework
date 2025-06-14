@@ -1,11 +1,14 @@
 package base;
 
 import com.aventstack.extentreports.ExtentTest;
+import listerner.TestListener;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import utils.DriverUtils;
 import utils.ReportUtils;
 
+@Listeners(TestListener.class)
 public class BaseTest {
 
     public ExtentTest test;

@@ -7,16 +7,17 @@ import org.openqa.selenium.By;
  */
 public class PortalPage extends BasePage {
 
+    // assume the element's id is 'createWallet'
     private By btnCreateWallet = By.id("createWallet");
 
     private By btnImportWallet = By.id("importWallet");
 
     public void clickBtnCreateWallet() {
-        driver.findElement(btnCreateWallet).click();
+        click(btnCreateWallet);
     }
 
     public void clickBtnImportWallet() {
-        driver.findElement(btnImportWallet).click();
+        click(btnImportWallet);
     }
 
 }

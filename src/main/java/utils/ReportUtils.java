@@ -11,7 +11,7 @@ public class ReportUtils {
 
     public static ExtentReports getInstance() {
         if (extent == null) {
-            ExtentSparkReporter spark = new ExtentSparkReporter("resources/reports/createWallet.html");
+            ExtentSparkReporter spark = new ExtentSparkReporter("test-output/reports/createWallet.html");
             extent = new ExtentReports();
             extent.attachReporter(spark);
         }
