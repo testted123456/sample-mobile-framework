@@ -4,6 +4,7 @@ import base.BaseTest;
 import biz.PasswordSetupBiz;
 import biz.PortalBiz;
 import biz.SuccessBiz;
+import listerner.RetryAnalyzer;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.ExcelUtils;
@@ -26,7 +27,7 @@ public class CreateWalletTest extends BaseTest {
     }
 
 
-    @Test(dataProvider = "successData")
+    @Test(dataProvider = "successData", retryAnalyzer = RetryAnalyzer.class)
     public void testCreateWalletSuccess(String digits) {
         test.info("begin to create wallet...");
 
