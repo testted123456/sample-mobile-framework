@@ -7,7 +7,7 @@
 │   │       ├── tests/             # TestNG test classes
 │   │       ├── pages/             # Page Object Model classes
 │   │       └── base/              # Base test setup/teardown
-│   │       └── biz/               # abstracts and define the business logic by encapsulating it in individual methods.
+│   │       └── biz/               # Encapsulate the business logic into reusable methods.
 │   │       └── listener/          # take screenshort when tests failed
 │   │       └── utils/  
 │   │           └── DriverUtils.java   
